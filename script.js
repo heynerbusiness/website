@@ -225,4 +225,45 @@ backToTopBtn.addEventListener('mouseenter', () => {
 backToTopBtn.addEventListener('mouseleave', () => {
     backToTopBtn.style.transform = 'scale(1)';
     backToTopBtn.style.background = '#2563eb';
+});
+
+// Language switching functionality
+const langButtons = document.querySelectorAll('.lang-btn');
+const translatableElements = document.querySelectorAll('[data-en][data-de]');
+
+function switchLanguage(lang) {
+    // Update button states
+    langButtons.forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.lang === lang) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Update content
+    translatableElements.forEach(element => {
+        const translation = element.dataset[lang];
+        if (translation) {
+            element.textContent = translation;
+        }
+    });
+
+    // Store language preference
+    localStorage.setItem('preferred-language', lang);
+}
+
+// Add event listeners to language buttons
+langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        switchLanguage(lang);
+    });
+});
+
+// Load saved language preference
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferred-language');
+    if (savedLang) {
+        switchLanguage(savedLang);
+    }
 }); 
