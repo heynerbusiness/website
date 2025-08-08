@@ -39,10 +39,19 @@ body {
     align-items: center;
 }
 
-.nav-logo h2 {
-    color: #2563eb;
-    font-weight: 700;
-    font-size: 1.5rem;
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
 .nav-menu {
