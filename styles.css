@@ -71,37 +71,7 @@ body {
     color: #2563eb;
 }
 
-/* Language Selector */
-.language-selector {
-    display: flex;
-    gap: 0.5rem;
-    margin-left: 1rem;
-}
 
-.lang-btn {
-    background: transparent;
-    border: 1px solid #e2e8f0;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #64748b;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.lang-btn:hover {
-    border-color: #2563eb;
-    color: #2563eb;
-}
-
-.lang-btn.active {
-    background: #2563eb;
-    color: white;
-    border-color: #2563eb;
-}
 
 .hamburger {
     display: none;
@@ -462,6 +432,8 @@ body {
     .hamburger {
         display: flex;
     }
+    
+
 
     .nav-menu {
         position: fixed;
