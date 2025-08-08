@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
@@ -63,7 +63,7 @@ body {
 .nav-link {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
+    font-weight: 400;
     transition: color 0.3s ease;
 }
 
@@ -107,9 +107,10 @@ body {
 
 .hero-title {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero-subtitle {
@@ -178,9 +179,10 @@ body {
 
 .section-header h2 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1rem;
     color: #1e293b;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .section-header p {
@@ -225,9 +227,10 @@ body {
 
 .service-card h3 {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1rem;
     color: #1e293b;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .service-card p {
@@ -250,9 +253,10 @@ body {
 
 .about-text h2 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1.5rem;
     color: #1e293b;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about-text p {
