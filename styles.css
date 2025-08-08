@@ -88,6 +88,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     color: #64748b;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .lang-btn:hover {
